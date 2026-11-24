@@ -1,0 +1,19 @@
+/* РАХАТ — Оформление раздела */
+body.archive-flame .archive-page,body.archive-famine .archive-page{background:#c69a65!important;overflow:hidden}
+body.archive-flame .archive-hero,body.archive-famine .archive-hero{background:var(--hero-art) center / 100% 100% no-repeat!important;color:#fff0d9!important;min-height:clamp(380px,33.33vw,760px);box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(50px,5vw,110px) 7%!important}
+body.archive-flame{--hero-art:url('../assets/images/archive-flame-hero.webp')}
+body.archive-famine{--hero-art:url('../assets/images/archive-famine-hero.webp')}
+body .archive-hero::before{display:none!important}
+body .archive-hero h1{font-size:clamp(36px,7vw,130px);color:#fff0d9!important;line-height:1.12;max-width:100%;overflow-wrap:normal}
+body .archive-hero p{color:#fff0d9!important;max-width:55%;text-shadow:0 1px 4px #24170e}
+body .archive-hero em{color:#edc18b!important}
+body.archive-flame .archive-list{max-width:none!important;width:100%;box-sizing:border-box;background:url('../assets/images/archive-flame-long.webp') center / 100% 100% no-repeat!important;padding:clamp(65px,7vw,130px) max(7%,calc((100% - 1250px)/2)) clamp(250px,30vw,560px)!important;gap:clamp(65px,8vw,145px)}
+body.archive-famine .archive-list{max-width:none!important;box-sizing:border-box;background:linear-gradient(#ead6b966,#ead6b966),url('../assets/images/asharshylyk-paper-background.webp') center / cover;padding-inline:max(7%,calc((100% - 1250px)/2))}
+body .archive-copy{padding:clamp(20px,3vw,40px)!important}
+body .archive-frame img{width:100%;height:auto!important;object-fit:contain!important}
+@media(max-width:750px){body .archive-hero{background-size:cover!important;background-position:35% center!important}body .archive-hero p{max-width:85%}body.archive-flame .archive-list{padding-inline:8%!important;padding-bottom:240px!important}}
+/* Keep the full illustrated page behind all four stories. */
+body.archive-flame .archive-list{background-color:#b98047!important;background-position:center top!important;background-size:100% 100%!important;padding-bottom:clamp(300px,42vw,760px)!important}
+body.archive-flame .archive-hero,body.archive-famine .archive-hero{min-height:0;aspect-ratio:3/1}
+body .archive-hero h1{font-size:clamp(32px,6.5vw,125px);margin:0.12em 0}
+@media(max-width:750px){body.archive-flame .archive-hero,body.archive-famine .archive-hero{aspect-ratio:auto;min-height:420px;background-size:cover!important;background-position:40% center!important}body.archive-flame .archive-list{padding-bottom:280px!important}}
